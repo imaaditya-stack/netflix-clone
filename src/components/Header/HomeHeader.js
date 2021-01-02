@@ -14,7 +14,7 @@ function HomeHeader() {
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="ml-auto">
           <Form inline>
-            <Button className="banner--main--button sign-in">Sign in</Button>
+            <Button className="button--global">Sign In</Button>
           </Form>
         </Nav>
       </Navbar.Collapse>

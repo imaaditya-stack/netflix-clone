@@ -1,8 +1,0 @@
-.stories__container:nth-child(even) {
-    background-color: #333;
-}
-
-.story__card__title {
-    font-weight: bold;
-    letter-spacing: 1px;
-}

@@ -1,15 +1,15 @@
-.row__wrapper {
+.row__container {
     display: flex;
     overflow-x: scroll;
     overflow-y: hidden;
     padding: 20px;
 }
 
-.row__wrapper::-webkit-scrollbar {
+.row__container::-webkit-scrollbar {
     display: none;
 }
 
-.row__poster {
+.row__poster--sm {
     object-fit: contain;
     max-height: 150px;
     margin-right: 10px;
@@ -29,20 +29,21 @@
     transform: scale(1.08);
 }
 
-.genre {
+.row__title {
     letter-spacing: 2px;
     font-size: 25px;
+    text-transform: uppercase;
 }
 
 @media only screen and (max-width: 768px) {
-    .genre {
+    .row__title {
         font-size: 16px;
         padding-left: 5px;
     }
     .row__poster--lg {
         max-height: 200px !important;
     }
-    .row__poster {
+    .row__poster--sm {
         max-height: 100px;
     }
     .container-fluid {

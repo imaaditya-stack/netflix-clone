@@ -1,12 +1,12 @@
 import React from "react";
 import { useEffect, useState } from "react";
 import { Button } from "react-bootstrap";
+import Loader from "react-loader-spinner";
+import PlayCircleFilledWhiteIcon from "@material-ui/icons/PlayCircleFilledWhite";
 import API from "../../api/service";
 import requests from "../../api/config";
-import Loader from "react-loader-spinner";
-import Header from "../Header";
+import MainHeader from "../Header/MainHeader";
 import "./style.css";
-import PlayCircleFilledWhiteIcon from "@material-ui/icons/PlayCircleFilledWhite";
 
 function Banner() {
   const [data, setData] = useState([]);
@@ -30,35 +30,35 @@ function Banner() {
   };
   return (
     <div
-      className="banner"
+      className="banner--main"
       style={{
         backgroundImage: `url(${base_url}${data?.backdrop_path})`,
       }}
     >
-      <div className="banner__main--div">
-        <Header />
+      <div className="banner--main--div">
+        <MainHeader />
         {loading ? (
           <div className="m-auto">
             <Loader type="ThreeDots" color="#E50914" height={50} width={50} />
           </div>
         ) : (
-          <div className="banner__contents">
-            <h1 className="banner__contents--title">
+          <div className="banner--main--contents">
+            <h1 className="banner--main--contents--title">
               {data?.title || data?.name || data?.original_name}
             </h1>
-            <p className="banner__contents--overview">
+            <p className="banner--main--contents--overview">
               {truncate(data.overview, 150)}
             </p>
-            <Button className="banner__button--1 mr-4">
+            <Button className="banner--main--button--1 mr-4">
               <PlayCircleFilledWhiteIcon
                 style={{ marginRight: 8, marginBottom: 5 }}
               />
               Play
             </Button>
-            <Button className="banner__button--2">More info</Button>
+            <Button className="banner--main--button--2">More info</Button>
           </div>
         )}
-        <div className="banner__fade--bottom"></div>
+        <div className="banner--main--fade--bottom"></div>
       </div>
     </div>
   );

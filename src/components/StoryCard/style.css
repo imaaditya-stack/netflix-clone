@@ -1,6 +1,5 @@
 .story__card__container {
     width: 100%;
-    border-top: 5px solid #222;
     border-bottom: 5px solid #222;
 }
 
@@ -22,13 +21,24 @@
     width: 500px;
 }
 
+.story__card__title {
+    font-size: 45px;
+}
+
 @media only screen and (max-width: 768px) {
     .story__card {
         display: block;
         width: 100%;
         text-align: center;
+        padding: 30px 10px;
     }
     .story__card__content {
         width: auto;
+    }
+    .story__card__title {
+        font-size: 20px;
+    }
+    .story__card__subtitle {
+        font-size: 18px;
     }
 }

@@ -1,6 +1,6 @@
 const API_KEY = `ce87cbfe1ed1c37b26dfa3f1c94614c0`;
 
-export const baseImageUrl = "https://image.tmdb.org/t/p/original/";
+export const BASE_IMAGE_URL = "https://image.tmdb.org/t/p/original/";
 
 const requests = {
   fetchTrending: `/trending/all/week?api_key=${API_KEY}&language=en-US`,
