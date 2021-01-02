@@ -1,0 +1,34 @@
+.story__card__container {
+    width: 100%;
+    border-top: 5px solid #222;
+    border-bottom: 5px solid #222;
+}
+
+.story__card {
+    width: 60%;
+    margin: 0 auto;
+    padding: 40px 0;
+    display: flex;
+    color: #fff;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.story__card__container:nth-child(even) .story__card {
+    flex-direction: row-reverse;
+}
+
+.story__card__content {
+    width: 500px;
+}
+
+@media only screen and (max-width: 768px) {
+    .story__card {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    .story__card__content {
+        width: auto;
+    }
+}

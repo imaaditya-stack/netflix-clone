@@ -1,0 +1,52 @@
+.row__wrapper {
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    padding: 20px;
+}
+
+.row__wrapper::-webkit-scrollbar {
+    display: none;
+}
+
+.row__poster {
+    object-fit: contain;
+    max-height: 150px;
+    margin-right: 10px;
+    transition: transform 400ms;
+    cursor: pointer;
+}
+
+.row__poster--lg {
+    max-height: 300px;
+}
+
+.row__poster--lg:hover {
+    transform: scale(1.2);
+}
+
+.row__poster:hover {
+    transform: scale(1.08);
+}
+
+.genre {
+    letter-spacing: 2px;
+    font-size: 25px;
+}
+
+@media only screen and (max-width: 768px) {
+    .genre {
+        font-size: 16px;
+        padding-left: 5px;
+    }
+    .row__poster--lg {
+        max-height: 200px !important;
+    }
+    .row__poster {
+        max-height: 100px;
+    }
+    .container-fluid {
+        padding-right: 0 !important;
+        padding-left: 5px !important;
+    }
+}

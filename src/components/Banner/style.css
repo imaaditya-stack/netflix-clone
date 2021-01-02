@@ -1,0 +1,112 @@
+.banner {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    color: #fff;
+    height: 600px;
+    max-height: 600px;
+    object-fit: contain;
+}
+
+.banner--main {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    color: #fff;
+    height: 750px;
+    max-height: 750px;
+    object-fit: contain;
+}
+
+.banner--main--contents--title {
+    font-size: 70px;
+    font-weight: bold;
+}
+
+.banner--main--div {
+    display: flex;
+    flex-direction: column;
+    height: 750px;
+    max-height: 750px;
+    background-image: linear-gradient( to top, rgba(27, 12, 12, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.9) 90%);
+    justify-content: space-between;
+}
+
+.banner__main--div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 600px;
+    max-height: 600px;
+    background-image: linear-gradient( to top, rgba(27, 12, 12, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.9) 100%);
+}
+
+.banner--main--button {
+    background-color: #e50914 !important;
+    outline: none !important;
+    border: none !important;
+    box-shadow: none !important;
+    text-transform: uppercase;
+    font-weight: bold !important;
+    letter-spacing: 2px;
+    padding: 20px 30px !important;
+    font-size: 25px !important;
+}
+
+.sign-in {
+    padding: 10px 20px !important;
+    font-size: 15px !important;
+    text-transform: capitalize;
+}
+
+.banner__contents {
+    padding-left: 40px;
+    width: 45rem;
+}
+
+.banner__button--1,
+.banner__button--2 {
+    border: none !important;
+    box-shadow: none !important;
+    background-color: #e6e6e6 !important;
+    outline: none !important;
+    color: #111 !important;
+    width: 110px;
+    padding: 10px 0 !important;
+    font-weight: bold !important;
+    letter-spacing: 1px;
+}
+
+.banner__button--1 {
+    background-color: rgba(51, 51, 51, 0.5) !important;
+    color: #fff !important;
+}
+
+.banner__contents--title {
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.banner__contents--overview {
+    font-weight: bold;
+}
+
+.banner__fade--bottom {
+    height: 7.2rem;
+    background-image: linear-gradient( 180deg, transparent, rgba(37, 37, 37, 0.61), #111);
+}
+
+@media only screen and (max-width: 768px) {
+    .banner__main--div,
+    .banner {
+        height: 500px;
+        max-height: 500px;
+    }
+    .banner__contents--title {
+        font-size: 18px;
+    }
+    .banner__contents {
+        padding-left: 10px;
+        width: auto;
+    }
+}
