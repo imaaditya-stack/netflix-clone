@@ -1,15 +1,21 @@
 import React from "react";
-import { Navbar, Form, Button, Image, Nav } from "react-bootstrap";
+import { Navbar, Form, Button, Nav } from "react-bootstrap";
 import "./style.css";
 
 function HomeHeader() {
   return (
     <Navbar expand="lg" className="navbar navbar-default" variant="dark">
       <Navbar.Brand href="/">
-        <Image
-          src="https://logos-world.net/wp-content/uploads/2020/04/Netflix-Logo.png"
-          className="img-fluid navbar__brand"
-        />
+        <span
+          style={{
+            color: "#e50914",
+            fontWeight: "bold",
+            fontSize: 30,
+            letterSpacing: 2,
+          }}
+        >
+          NETFLIX
+        </span>
       </Navbar.Brand>
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="ml-auto">
